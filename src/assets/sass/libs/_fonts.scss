@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Pixel Game';
+  src: url('../webfonts/pixel-game/pixel-game.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// 3. Variáveis de Famílias Tipográficas
+$font-secondary: 'Arial', system-ui, -apple-system, sans-serif;
+$font-primary: 'Pixel Game', Georgia, serif;
+
+// 4. Variáveis de Pesos (Font Weights)
+$weight-regular: 400;
+$weight-semibold: 600;
+$weight-bold: 700;
