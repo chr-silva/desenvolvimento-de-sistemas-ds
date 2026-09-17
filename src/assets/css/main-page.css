@@ -1,0 +1,29 @@
+.slider-container {
+    max-height: 220px;       /* Define a altura limite para forçar o scroll */
+    overflow-y: auto;        /* Ativa o scroll vertical */
+    padding-right: 15px;     /* Garante espaço para a barra de rolagem */
+}
+
+/* Personalização da barra de rolagem para navegadores Webkit (Chrome/Edge/Safari) */
+.slider-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.slider-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slider-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/* Cor da barra ao passar o mouse */
+.slider-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

@@ -31,19 +31,19 @@
 
 // Palette.
 	$palette: (
-		bg:					#1c1d26,
-		bg-transparent:		rgba(23,24,32,0.95),
+		bg:					#00072D,
+		bg-transparent:		rgba(0,7,45,0.95),
 		fg-bold:			#ffffff,
-		fg:					rgba(255,255,255,0.75),
-		fg-light:			rgba(255,255,255,0.5),
-		fg-lighter:			rgba(255,255,255,0.15),
-		border:				rgba(255,255,255,0.3),
-		border-bg:			rgba(255,255,255,0.075),
-		border2:			rgba(255,255,255,0.5),
-		border2-bg:			rgba(255,255,255,0.25),
-		accent1:			#e44c65,
-		accent2:			#272833,
-		accent2-transparent:rgba(39,40,51,0.965),
-		accent3:			#5480f1,
-		accent4:			#39c088
+		fg:					rgba(196,196,196,0.9),
+		fg-light:			rgba(196,196,196,0.6),
+		fg-lighter:			rgba(196,196,196,0.2),
+		border:				rgba(96,129,196,0.4),
+		border-bg:			rgba(96,129,196,0.08),
+		border2:			rgba(96,129,196,0.6),
+		border2-bg:			rgba(96,129,196,0.2),
+		accent1:			#6081C4,
+		accent2:			#001C55,
+		accent2-transparent:rgba(0,28,85,0.965),
+		accent3:			#6081C4,
+		accent4:			#4a6ab0
 	);
