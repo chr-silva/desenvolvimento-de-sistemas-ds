@@ -27,3 +27,12 @@
 .slider-container::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+.ds-bg {
+  background-attachment: fixed;
+  background-color: #001C55;
+  background-image: url("../../images/ds-bg.png");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+}

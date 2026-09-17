@@ -1,15 +1,21 @@
-/* Kinetic Type — Glitch */
+/* Kinetic Type — Glitch / Neon */
 .kinetic-text {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0 0.2em;
-  /* Load your custom font via @font-face */
   font-family: 'Pixel Game', sans-serif;
-  font-size: 44px;
+  font-size: 4rem;
   color: #ffffff;
+  width: 100%;
 }
 
-.kt-space { width: 0.3em; }
+.kt-word {
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap; /* Impede que uma palavra se quebre ao meio */
+}
 
 .kt-neon .kt-char {
   display: inline-block;
@@ -25,4 +31,21 @@
   50% { opacity: 1; text-shadow: 0 0 7px currentColor, 0 0 20px currentColor, 0 0 60px currentColor; }
   52% { opacity: 0.4; text-shadow: none; }
   54% { opacity: 1; text-shadow: 0 0 7px currentColor, 0 0 20px currentColor, 0 0 40px currentColor; }
+}
+
+/* ==============================================
+   AJUSTE EXCLUSIVO PARA TELA DE CELULAR (MOBILE)
+   ============================================== */
+@media screen and (max-width: 736px) {
+  .kinetic-text {
+    flex-direction: column;
+    gap: 0.2em 0;          
+    font-size: 3rem;     
+    margin-right: 2px;  
+  }
+
+  .kt-word {
+    display: flex;
+    justify-content: center;
+  }
 }

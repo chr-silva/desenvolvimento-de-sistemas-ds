@@ -1155,6 +1155,8 @@
 
 	.spotlight {
 		background-attachment:	fixed;
+		background-color:		_palette(accent2);
+		background-image:		url('../../images/ds-bg.png');
 		background-position:	center center;
 		background-size:		cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
@@ -1191,6 +1193,7 @@
 		.content {
 			@include vendor('transform', 'translate(0,0)');
 			@include vendor('transition', 'transform 1s ease, opacity 1s ease');
+			@include ds-marquee-bg(0.12);
 			background: _palette(bg-transparent);
 			border-style: solid;
 			opacity: 1;
@@ -1317,8 +1320,56 @@
 		// &.style1 {
 		// }
 
+		&.style1 {
+			background-attachment: fixed;
+			background-color: _palette(bg);
+			background-image: url('../../images/ds-bg.png');
+			background-position: center center;
+			background-size: cover;
+			position: relative;
+
+			&:before {
+				@include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 0;
+			}
+
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+		}
+
 		&.style2 {
-			background: _palette(accent1);
+			background-attachment: fixed;
+			background-color: _palette(accent2);
+			background-image: url('../../images/ds-bg.png');
+			background-position: center center;
+			background-size: cover;
+			position: relative;
+
+			&:before {
+				@include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 0;
+			}
+
+			> * {
+				position: relative;
+				z-index: 1;
+			}
 
 			input[type="text"],
 			input[type="password"],
@@ -1472,6 +1523,7 @@
 	}
 
 	#header {
+		@include ds-marquee-bg(0.15);
 		background: _palette(accent2-transparent);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.25);
 		cursor: default;
@@ -1554,7 +1606,7 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: _palette(accent2);
-		background-image: url('../../images/banner.jpg');
+		background-image: url('../../images/ds-bg.png');
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
