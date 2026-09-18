@@ -12,6 +12,34 @@
   font-style: normal;
   font-display: swap;
 }
+@keyframes ds-marquee {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 560px 560px;
+  }
+}
+.bmo-bg {
+  position: relative;
+  overflow: hidden;
+}
+.bmo-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("../../images/bmobg.svg");
+  background-repeat: repeat;
+  background-size: 560px 315px;
+  animation: ds-marquee 8s linear infinite;
+}
+.bmo-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,

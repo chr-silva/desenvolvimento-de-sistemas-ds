@@ -32,6 +32,41 @@
 		xsmall:   ( null,    480px  ),
 	));
 
+// DS Marquee — animação de texto diagonal nos containers .content
+
+	@keyframes ds-marquee {
+		from { background-position: 0 0; }
+		to   { background-position: 560px 560px; }
+	}
+
+	@mixin ds-marquee-bg {
+		position: relative;
+		overflow: hidden;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+			pointer-events: none;
+			background-image: url("../../images/bmobg.svg");
+			background-repeat: repeat;
+			background-size: 560px 315px;
+			animation: ds-marquee 8s linear infinite;
+		}
+
+		> * {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+// Aplicar o efeito BMO via classe utilitária
+
+	.bmo-bg {
+		@include ds-marquee-bg;
+	}
+
 // Mixins.
 
 	@mixin line-icon($bg: _palette(bg), $fg: _palette(fg-bold)) {
@@ -1193,7 +1228,6 @@
 		.content {
 			@include vendor('transform', 'translate(0,0)');
 			@include vendor('transition', 'transform 1s ease, opacity 1s ease');
-			@include ds-marquee-bg(0.12);
 			background: _palette(bg-transparent);
 			border-style: solid;
 			opacity: 1;
@@ -1523,7 +1557,6 @@
 	}
 
 	#header {
-		@include ds-marquee-bg(0.15);
 		background: _palette(accent2-transparent);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.25);
 		cursor: default;

@@ -83,11 +83,10 @@ window.SHIMEJI_CONFIG = {
     'spin',
     'sit',
     'dance','dance',
-    'trip',
+    'trip', 'trip',
     'soccer', 'soccer',
     'playing', 'playing',
     'sk8', 'sk8',
-    'forcethink'
   ],
 
   EDGE_ACTIONS: [
