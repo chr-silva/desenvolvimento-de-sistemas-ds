@@ -3284,7 +3284,7 @@ body.is-touch #banner {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #001C55;
+    background: #00072D;
     box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
   }
   #titleBar .title {
@@ -3324,7 +3324,7 @@ body.is-touch #banner {
     border: 0;
   }
   #titleBar .toggle:before {
-    background: #6081C4;
+    background: #00072D;
     color: rgba(196, 196, 196, 0.6);
     content: "\f0c9";
     display: block;
