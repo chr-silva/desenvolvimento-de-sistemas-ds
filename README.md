@@ -1,4 +1,5 @@
-# 💻 Desenvolvimento de Sistemas — IFPA
+![Desenvolvimento de Sistemas – IFPA](https://ibb.co/SwC3wmc1)
+# 💻 Desenvolvimento de Sistemas - IFPA
 
 Bem-vindo ao repositório oficial do site da turma de **Técnico em Desenvolvimento de Sistemas** do **Instituto Federal do Pará (IFPA)**!
 
